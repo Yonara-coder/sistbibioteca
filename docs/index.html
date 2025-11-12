@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Biblioteca</title>
+    <link rel="stylesheet" href="static/admin/css/biblioteca_custom.css">
+    <style>
+        /* Estilos adicionais para a página de demonstração */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .demo-header {
+            background: linear-gradient(135deg, #8B4513 0%, #6B4423 100%);
+            color: #F5E6D3;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(43, 24, 16, 0.3);
+        }
+        .demo-header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .demo-header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+        }
+        .demo-section {
+            background: #FFFFFF;
+            border: 2px solid #8B7355;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(43, 24, 16, 0.2);
+        }
+        .demo-section h2 {
+            color: #8B4513;
+            border-bottom: 2px solid #D4A574;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-card {
+            background: #F5E6D3;
+            border: 2px solid #8B7355;
+            border-radius: 5px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(43, 24, 16, 0.3);
+        }
+        .feature-card h3 {
+            color: #2F4F2F;
+            margin-top: 0;
+        }
+        .btn-demo {
+            display: inline-block;
+            background: linear-gradient(135deg, #8B4513 0%, #6B4423 100%);
+            color: #F5E6D3;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            border: 2px solid #8B7355;
+        }
+        .btn-demo:hover {
+            background: linear-gradient(135deg, #6B4423 0%, #8B4513 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(43, 24, 16, 0.3);
+        }
+        .tech-list {
+            list-style: none;
+            padding: 0;
+        }
+        .tech-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #E8D5C4;
+        }
+        .tech-list li:before {
+            content: "📚 ";
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-header">
+            <h1>📚 Sistema de Gerenciamento de Biblioteca</h1>
+            <p>Desenvolvido com Django e Django Jazzmin</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>📖 Sobre o Projeto</h2>
+            <p>Sistema completo de gerenciamento de biblioteca desenvolvido com Python (Django), com um painel administrativo customizado através do Django Jazzmin. O sistema permite o cadastro e a gestão de livros, autores, editoras, gêneros, membros da biblioteca, empréstimos e devoluções.</p>
+            <p><strong>Tema Visual:</strong> Cores que remetem a sabedoria e tranquilidade - marrom sienna, bege dourado e verde floresta, criando uma atmosfera acolhedora de biblioteca tradicional.</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>🎨 Características Visuais</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🎨 Tema Customizado</h3>
+                    <p>Paleta de cores inspirada em bibliotecas tradicionais com gradientes suaves e animações elegantes.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Responsivo</h3>
+                    <p>Interface adaptável para diferentes tamanhos de tela, garantindo uma experiência consistente.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✨ Animações Suaves</h3>
+                    <p>Transições e efeitos hover que melhoram a experiência do usuário.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Painel Administrativo</h3>
+                    <p>Interface completa com Django Admin customizado via Jazzmin.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>🗄️ Modelagem de Dados</h2>
+            <p>O sistema possui <strong>8 models</strong> interligados:</p>
+            <ul class="tech-list">
+                <li><strong>Editora</strong> - Informações sobre editoras</li>
+                <li><strong>Autor</strong> - Dados dos autores</li>
+                <li><strong>Gênero</strong> - Categorias literárias</li>
+                <li><strong>Livro</strong> - Catálogo de livros</li>
+                <li><strong>Membro</strong> - Usuários da biblioteca</li>
+                <li><strong>Exemplar</strong> - Cópias físicas dos livros</li>
+                <li><strong>Empréstimo</strong> - Registro de empréstimos</li>
+                <li><strong>Devolução</strong> - Registro de devoluções</li>
+            </ul>
+        </div>
+
+        <div class="demo-section">
+            <h2>🛠️ Tecnologias Utilizadas</h2>
+            <ul class="tech-list">
+                <li><strong>Python</strong> - Linguagem de programação</li>
+                <li><strong>Django</strong> - Framework web</li>
+                <li><strong>Django Jazzmin</strong> - Tema administrativo</li>
+                <li><strong>HTML/CSS</strong> - Templates e estilização customizada</li>
+                <li><strong>SQLite</strong> - Banco de dados</li>
+            </ul>
+        </div>
+
+        <div class="demo-section">
+            <h2>📥 Como Usar</h2>
+            <p>Para executar o projeto localmente:</p>
+            <ol>
+                <li>Clone o repositório: <code>git clone https://github.com/Yonara-coder/sistbibioteca.git</code></li>
+                <li>Instale as dependências: <code>pip install -r requirements.txt</code></li>
+                <li>Execute as migrações: <code>python manage.py migrate</code></li>
+                <li>Crie um superusuário: <code>python manage.py createsuperuser</code></li>
+                <li>Inicie o servidor: <code>python manage.py runserver</code></li>
+                <li>Acesse: <code>http://127.0.0.1:8000/admin/</code></li>
+            </ol>
+            <a href="https://github.com/Yonara-coder/sistbibioteca" class="btn-demo">Ver no GitHub</a>
+        </div>
+
+        <div class="demo-section">
+            <h2>⚠️ Nota Importante</h2>
+            <p><strong>Esta é uma demonstração visual.</strong> O GitHub Pages não suporta aplicações Django (que precisam de servidor Python). Para ver o sistema funcionando completamente, você precisa executá-lo localmente ou fazer deploy em plataformas como:</p>
+            <ul class="tech-list">
+                <li><strong>Render</strong> - https://render.com</li>
+                <li><strong>Railway</strong> - https://railway.app</li>
+                <li><strong>Heroku</strong> - https://heroku.com</li>
+                <li><strong>PythonAnywhere</strong> - https://pythonanywhere.com</li>
+            </ul>
+        </div>
+
+        <div class="demo-section" style="text-align: center; background: linear-gradient(135deg, #2F4F2F 0%, #1B3A1B 100%); color: #F5E6D3;">
+            <h2 style="color: #F5E6D3; border-bottom: 2px solid #D4A574;">👩‍💻 Desenvolvido por Yonara</h2>
+            <p>2024 - Sistema de Gerenciamento de Biblioteca</p>
+            <p style="font-size: 0.9em; opacity: 0.9;">Desenvolvido com ❤️ usando Django e Django Jazzmin</p>
+        </div>
+    </div>
+</body>
+</html>
+

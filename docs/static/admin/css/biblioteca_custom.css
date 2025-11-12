@@ -1,0 +1,482 @@
+/* ============================================
+   ESTILIZAÇÃO CUSTOMIZADA - TEMA BIBLIOTECA
+   Cores que remetem a sabedoria e tranquilidade
+   ============================================ */
+
+/* Paleta de Cores - Tema Biblioteca */
+:root {
+    --cor-primaria: #8B4513;        /* Marrom sienna - cor de livros antigos */
+    --cor-secundaria: #D4A574;      /* Bege dourado - páginas antigas */
+    --cor-terciaria: #2F4F2F;       /* Verde floresta - conhecimento */
+    --cor-destaque: #6B4423;        /* Marrom escuro - couro de livros */
+    --cor-fundo-claro: #F5E6D3;     /* Bege claro - papel envelhecido */
+    --cor-fundo-escuro: #3E2723;    /* Marrom muito escuro */
+    --cor-texto: #2C1810;           /* Marrom quase preto */
+    --cor-texto-claro: #F5E6D3;     /* Bege claro para texto em fundo escuro */
+    --cor-borda: #8B7355;           /* Marrom médio para bordas */
+    --cor-hover: #A0826D;           /* Marrom médio para hover */
+    --cor-sombra: rgba(43, 24, 16, 0.2); /* Sombra suave */
+}
+
+/* ============================================
+   ESTILOS GLOBAIS
+   ============================================ */
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif !important;
+    background: linear-gradient(135deg, #F5E6D3 0%, #E8D5C4 100%) !important;
+    color: var(--cor-texto) !important;
+}
+
+/* ============================================
+   NAVBAR (Barra Superior)
+   ============================================ */
+
+.main-header {
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-destaque) 100%) !important;
+    border-bottom: 3px solid var(--cor-secundaria) !important;
+    box-shadow: 0 4px 8px var(--cor-sombra) !important;
+}
+
+.navbar-brand {
+    color: var(--cor-fundo-claro) !important;
+    font-weight: bold !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
+    font-size: 1.3em !important;
+}
+
+.navbar-brand:hover {
+    color: var(--cor-secundaria) !important;
+}
+
+/* ============================================
+   SIDEBAR (Menu Lateral)
+   ============================================ */
+
+.main-sidebar {
+    background: linear-gradient(180deg, var(--cor-terciaria) 0%, #1B3A1B 100%) !important;
+    border-right: 2px solid var(--cor-secundaria) !important;
+}
+
+.sidebar {
+    background: linear-gradient(180deg, var(--cor-terciaria) 0%, #1B3A1B 100%) !important;
+}
+
+.nav-sidebar .nav-link {
+    color: var(--cor-fundo-claro) !important;
+    border-left: 3px solid transparent !important;
+    transition: all 0.3s ease !important;
+    padding: 12px 15px !important;
+    margin: 2px 0 !important;
+}
+
+.nav-sidebar .nav-link:hover {
+    background: rgba(212, 165, 116, 0.2) !important;
+    border-left-color: var(--cor-secundaria) !important;
+    color: var(--cor-secundaria) !important;
+    transform: translateX(5px) !important;
+}
+
+.nav-sidebar .nav-link.active {
+    background: rgba(212, 165, 116, 0.3) !important;
+    border-left-color: var(--cor-secundaria) !important;
+    color: var(--cor-secundaria) !important;
+    font-weight: bold !important;
+}
+
+.nav-sidebar .nav-treeview .nav-link {
+    padding-left: 35px !important;
+    font-size: 0.95em !important;
+}
+
+/* Ícones do menu */
+.nav-sidebar .nav-link i {
+    color: var(--cor-secundaria) !important;
+    margin-right: 10px !important;
+    width: 20px !important;
+}
+
+/* ============================================
+   CONTEÚDO PRINCIPAL
+   ============================================ */
+
+.content-wrapper {
+    background: var(--cor-fundo-claro) !important;
+    min-height: 100vh !important;
+}
+
+.content-header {
+    background: linear-gradient(135deg, var(--cor-secundaria) 0%, #C9A86B 100%) !important;
+    border-bottom: 2px solid var(--cor-borda) !important;
+    padding: 20px !important;
+    box-shadow: 0 2px 4px var(--cor-sombra) !important;
+}
+
+.content-header h1 {
+    color: var(--cor-texto) !important;
+    font-weight: bold !important;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ============================================
+   CARDS E BOXES
+   ============================================ */
+
+.card, .box, .info-box {
+    background: #FFFFFF !important;
+    border: 2px solid var(--cor-borda) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 6px var(--cor-sombra) !important;
+    transition: all 0.3s ease !important;
+    margin-bottom: 20px !important;
+}
+
+.card:hover, .box:hover, .info-box:hover {
+    box-shadow: 0 6px 12px var(--cor-sombra) !important;
+    transform: translateY(-2px) !important;
+}
+
+.card-header, .box-header {
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-destaque) 100%) !important;
+    color: var(--cor-fundo-claro) !important;
+    border-bottom: 2px solid var(--cor-secundaria) !important;
+    font-weight: bold !important;
+    padding: 15px !important;
+}
+
+.card-body, .box-body {
+    background: #FFFFFF !important;
+    padding: 20px !important;
+}
+
+/* ============================================
+   TABELAS
+   ============================================ */
+
+.table {
+    background: #FFFFFF !important;
+    border-radius: 5px !important;
+    overflow: hidden !important;
+}
+
+.table thead {
+    background: linear-gradient(135deg, var(--cor-terciaria) 0%, #1B3A1B 100%) !important;
+    color: var(--cor-fundo-claro) !important;
+}
+
+.table thead th {
+    border-bottom: 2px solid var(--cor-secundaria) !important;
+    padding: 15px !important;
+    font-weight: bold !important;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #E8D5C4 !important;
+    transition: background 0.2s ease !important;
+}
+
+.table tbody tr:hover {
+    background: var(--cor-fundo-claro) !important;
+}
+
+.table tbody td {
+    padding: 12px 15px !important;
+    color: var(--cor-texto) !important;
+}
+
+/* ============================================
+   BOTÕES
+   ============================================ */
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-destaque) 100%) !important;
+    border: 2px solid var(--cor-borda) !important;
+    color: var(--cor-fundo-claro) !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 4px var(--cor-sombra) !important;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--cor-destaque) 0%, var(--cor-primaria) 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px var(--cor-sombra) !important;
+    color: var(--cor-secundaria) !important;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, var(--cor-terciaria) 0%, #1B3A1B 100%) !important;
+    border: 2px solid var(--cor-secundaria) !important;
+    color: var(--cor-fundo-claro) !important;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #1B3A1B 0%, var(--cor-terciaria) 100%) !important;
+    color: var(--cor-secundaria) !important;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #8B0000 0%, #A52A2A 100%) !important;
+    border: 2px solid #8B0000 !important;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #DAA520 0%, #CD853F 100%) !important;
+    border: 2px solid #DAA520 !important;
+    color: var(--cor-texto) !important;
+}
+
+/* ============================================
+   FORMULÁRIOS
+   ============================================ */
+
+.form-control, .form-select {
+    border: 2px solid var(--cor-borda) !important;
+    border-radius: 5px !important;
+    padding: 10px !important;
+    background: #FFFFFF !important;
+    color: var(--cor-texto) !important;
+    transition: all 0.3s ease !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--cor-primaria) !important;
+    box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25) !important;
+    outline: none !important;
+}
+
+.form-label {
+    color: var(--cor-texto) !important;
+    font-weight: bold !important;
+    margin-bottom: 8px !important;
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+
+a {
+    color: var(--cor-primaria) !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+a:hover {
+    color: var(--cor-destaque) !important;
+    text-decoration: underline !important;
+}
+
+/* ============================================
+   BADGES E LABELS
+   ============================================ */
+
+.badge, .label {
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    font-weight: bold !important;
+}
+
+.badge-primary {
+    background: var(--cor-primaria) !important;
+    color: var(--cor-fundo-claro) !important;
+}
+
+.badge-success {
+    background: var(--cor-terciaria) !important;
+    color: var(--cor-fundo-claro) !important;
+}
+
+/* ============================================
+   ALERTAS E MENSAGENS
+   ============================================ */
+
+.alert {
+    border-radius: 5px !important;
+    border-left: 4px solid !important;
+    padding: 15px !important;
+    margin-bottom: 20px !important;
+}
+
+.alert-success {
+    background: #E8F5E9 !important;
+    border-color: var(--cor-terciaria) !important;
+    color: #2E7D32 !important;
+}
+
+.alert-info {
+    background: #E3F2FD !important;
+    border-color: #2196F3 !important;
+    color: #1565C0 !important;
+}
+
+.alert-warning {
+    background: #FFF3E0 !important;
+    border-color: #FF9800 !important;
+    color: #E65100 !important;
+}
+
+.alert-danger {
+    background: #FFEBEE !important;
+    border-color: #F44336 !important;
+    color: #C62828 !important;
+}
+
+/* ============================================
+   PAGINAÇÃO
+   ============================================ */
+
+.pagination .page-link {
+    color: var(--cor-primaria) !important;
+    border: 1px solid var(--cor-borda) !important;
+    padding: 8px 12px !important;
+}
+
+.pagination .page-link:hover {
+    background: var(--cor-fundo-claro) !important;
+    color: var(--cor-destaque) !important;
+}
+
+.pagination .page-item.active .page-link {
+    background: var(--cor-primaria) !important;
+    border-color: var(--cor-primaria) !important;
+    color: var(--cor-fundo-claro) !important;
+}
+
+/* ============================================
+   FILTROS E BUSCA
+   ============================================ */
+
+#changelist-filter {
+    background: #FFFFFF !important;
+    border: 2px solid var(--cor-borda) !important;
+    border-radius: 5px !important;
+    padding: 15px !important;
+}
+
+#changelist-filter h3 {
+    color: var(--cor-primaria) !important;
+    border-bottom: 2px solid var(--cor-secundaria) !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+#changelist-filter a {
+    color: var(--cor-texto) !important;
+    padding: 5px 0 !important;
+    display: block !important;
+}
+
+#changelist-filter a:hover {
+    color: var(--cor-primaria) !important;
+    padding-left: 5px !important;
+}
+
+#searchbar {
+    border: 2px solid var(--cor-borda) !important;
+    border-radius: 5px !important;
+    padding: 10px !important;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.main-footer {
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-destaque) 100%) !important;
+    color: var(--cor-fundo-claro) !important;
+    border-top: 3px solid var(--cor-secundaria) !important;
+    padding: 15px !important;
+    text-align: center !important;
+}
+
+/* ============================================
+   WELCOME SIGN (Mensagem de Boas-vindas)
+   ============================================ */
+
+.welcome-sign {
+    background: linear-gradient(135deg, var(--cor-secundaria) 0%, #C9A86B 100%) !important;
+    border: 3px solid var(--cor-primaria) !important;
+    border-radius: 10px !important;
+    padding: 25px !important;
+    margin: 20px 0 !important;
+    box-shadow: 0 4px 8px var(--cor-sombra) !important;
+    text-align: center !important;
+}
+
+.welcome-sign h1 {
+    color: var(--cor-texto) !important;
+    font-size: 2em !important;
+    margin-bottom: 10px !important;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5) !important;
+}
+
+.welcome-sign p {
+    color: var(--cor-texto) !important;
+    font-size: 1.1em !important;
+    margin: 0 !important;
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .content-header h1 {
+        font-size: 1.5em !important;
+    }
+    
+    .table {
+        font-size: 0.9em !important;
+    }
+    
+    .btn {
+        padding: 8px 15px !important;
+        font-size: 0.9em !important;
+    }
+}
+
+/* ============================================
+   ANIMAÇÕES SUAVES
+   ============================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .box, .info-box {
+    animation: fadeIn 0.5s ease-in !important;
+}
+
+/* ============================================
+   SCROLLBAR CUSTOMIZADA
+   ============================================ */
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor-fundo-claro);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-destaque) 100%);
+    border-radius: 10px;
+    border: 2px solid var(--cor-fundo-claro);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, var(--cor-destaque) 0%, var(--cor-primaria) 100%);
+}
+
