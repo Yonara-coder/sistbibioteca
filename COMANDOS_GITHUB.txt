@@ -1,0 +1,17 @@
+# COMANDOS PARA CONECTAR AO SEU GITHUB (Yonara_coder)
+
+# 1. Adicionar o repositório remoto (execute este comando DEPOIS de criar o repo no GitHub)
+git remote add origin https://github.com/Yonara_coder/biblioteca.git
+
+# 2. Verificar se foi adicionado corretamente
+git remote -v
+
+# 3. Fazer o push (enviar para o GitHub)
+git push -u origin main
+
+# Se pedir autenticação:
+# - Username: Yonara_coder
+# - Password: Use um Personal Access Token (não sua senha do GitHub)
+#   Para criar: https://github.com/settings/tokens
+#   Escopo necessário: repo
+
