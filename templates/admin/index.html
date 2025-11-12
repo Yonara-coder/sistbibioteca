@@ -1,0 +1,16 @@
+{% extends "admin/index.html" %}
+{% load static %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'admin/css/biblioteca_custom.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="welcome-sign">
+        <h1>📖 Bem-vindo(a) ao Painel da Biblioteca</h1>
+        <p>Gerencie seus livros, membros e empréstimos com sabedoria e tranquilidade</p>
+    </div>
+    {{ block.super }}
+{% endblock %}
+

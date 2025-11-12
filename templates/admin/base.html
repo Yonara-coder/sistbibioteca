@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'admin/css/biblioteca_custom.css' %}">
+{% endblock %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <style>
+        /* Garantir que o CSS seja carregado */
+        @import url('{% static "admin/css/biblioteca_custom.css" %}');
+    </style>
+{% endblock %}
+

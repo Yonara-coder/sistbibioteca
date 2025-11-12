@@ -1,0 +1,22 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'admin/css/biblioteca_custom.css' %}">
+    <style>
+        /* Estilos adicionais inline para garantir que sejam aplicados */
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif !important;
+        }
+    </style>
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name">
+        <a href="{% url 'admin:index' %}">
+            📚 Biblioteca Central
+        </a>
+    </h1>
+{% endblock %}
+

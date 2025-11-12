@@ -1,0 +1,26 @@
+{% extends "admin/login.html" %}
+{% load static %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'admin/css/biblioteca_custom.css' %}">
+    <style>
+        /* Estilos específicos para a página de login */
+        body.login {
+            background: linear-gradient(135deg, #F5E6D3 0%, #E8D5C4 50%, #D4A574 100%) !important;
+        }
+        .login-box {
+            background: #FFFFFF !important;
+            border: 3px solid #8B4513 !important;
+            border-radius: 10px !important;
+            box-shadow: 0 8px 16px rgba(43, 24, 16, 0.3) !important;
+        }
+        .login-box-body {
+            background: #FFFFFF !important;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #8B4513 0%, #6B4423 100%) !important;
+        }
+    </style>
+{% endblock %}
+
